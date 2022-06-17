@@ -63,12 +63,12 @@
 				4110F96C285CF0DF00D97359 /* AppDelegate.swift */,
 				4110F96E285CF0DF00D97359 /* SceneDelegate.swift */,
 				4110F9A4285D104A00D97359 /* GFButton.swift */,
+				4110F9A6285D12DA00D97359 /* GFTextField.swift */,
 				4110F9A0285CF8EE00D97359 /* SearchViewController.swift */,
 				4110F9A2285CF91E00D97359 /* FavoriteListViewController.swift */,
 				4110F975285CF0E200D97359 /* Assets.xcassets */,
 				4110F977285CF0E200D97359 /* LaunchScreen.storyboard */,
 				4110F97A285CF0E200D97359 /* Info.plist */,
-				4110F9A6285D12DA00D97359 /* GFTextField.swift */,
 			);
 			path = "Tutorial-GitHub-Followers";
 			sourceTree = "<group>";
