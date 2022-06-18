@@ -22,6 +22,7 @@
 		4110F9B1285D415A00D97359 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9B0285D415A00D97359 /* UIViewController+Extension.swift */; };
 		4110F9B8285D4C9200D97359 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9B7285D4C9200D97359 /* Follower.swift */; };
 		4110F9BA285D4D2C00D97359 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9B9285D4D2C00D97359 /* User.swift */; };
+		41A44468285E0C59000F2C4A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A44467285E0C59000F2C4A /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		4110F9B0285D415A00D97359 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4110F9B7285D4C9200D97359 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		4110F9B9285D4D2C00D97359 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		41A44467285E0C59000F2C4A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,12 +76,13 @@
 		4110F96B285CF0DF00D97359 /* Tutorial-GitHub-Followers */ = {
 			isa = PBXGroup;
 			children = (
-				4110F9B6285D4C8700D97359 /* Model */,
 				4110F96C285CF0DF00D97359 /* AppDelegate.swift */,
 				4110F96E285CF0DF00D97359 /* SceneDelegate.swift */,
+				41A44466285E0C46000F2C4A /* Managers */,
+				4110F9B6285D4C8700D97359 /* Model */,
 				4110F9B4285D470D00D97359 /* Extensions */,
-				4110F9B3285D46ED00D97359 /* Views */,
 				4110F9B2285D46BD00D97359 /* Controllers */,
+				4110F9B3285D46ED00D97359 /* Views */,
 				4110F975285CF0E200D97359 /* Assets.xcassets */,
 				4110F977285CF0E200D97359 /* LaunchScreen.storyboard */,
 				4110F97A285CF0E200D97359 /* Info.plist */,
@@ -124,6 +127,14 @@
 				4110F9B9285D4D2C00D97359 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		41A44466285E0C46000F2C4A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41A44467285E0C59000F2C4A /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +217,7 @@
 				4110F9AD285D310600D97359 /* GFBodyLabel.swift in Sources */,
 				4110F9B8285D4C9200D97359 /* Follower.swift in Sources */,
 				4110F9AB285D2FAF00D97359 /* GFTitleLabel.swift in Sources */,
+				41A44468285E0C59000F2C4A /* NetworkManager.swift in Sources */,
 				4110F9A1285CF8EE00D97359 /* SearchViewController.swift in Sources */,
 				4110F96D285CF0DF00D97359 /* AppDelegate.swift in Sources */,
 				4110F96F285CF0DF00D97359 /* SceneDelegate.swift in Sources */,

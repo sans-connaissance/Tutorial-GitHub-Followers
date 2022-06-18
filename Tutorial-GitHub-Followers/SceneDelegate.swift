@@ -30,7 +30,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         return UINavigationController(rootViewController: searchVC)
     }
     
-    func createFavoritesNavigationControll() -> UINavigationController {
+    func createFavoritesNavigationController() -> UINavigationController {
         let favoritesNC = FavoriteListViewController()
         favoritesNC.title = "Favorites"
         favoritesNC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
@@ -44,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBar.tabBar.isTranslucent = true
         tabBar.tabBar.unselectedItemTintColor = .lightGray
         tabBar.viewControllers = [createSearchNavigationController(),
-                                  createFavoritesNavigationControll()]
+                                  createFavoritesNavigationController()]
     
         return tabBar
     }
