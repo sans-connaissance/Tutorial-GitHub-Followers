@@ -26,6 +26,7 @@
 		41A4446B285E154E000F2C4A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4446A285E154E000F2C4A /* ErrorMessage.swift */; };
 		41A4446E285E2029000F2C4A /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4446D285E2029000F2C4A /* FollowerCell.swift */; };
 		41A44470285E20A0000F2C4A /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4446F285E20A0000F2C4A /* GFAvatarImageView.swift */; };
+		41A44472285E398D000F2C4A /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A44471285E398D000F2C4A /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		41A4446A285E154E000F2C4A /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		41A4446D285E2029000F2C4A /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		41A4446F285E20A0000F2C4A /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		41A44471285E398D000F2C4A /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				41A4446A285E154E000F2C4A /* ErrorMessage.swift */,
+				41A44471285E398D000F2C4A /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				4110F9B1285D415A00D97359 /* UIViewController+Extension.swift in Sources */,
 				4110F9A7285D12DA00D97359 /* GFTextField.swift in Sources */,
 				4110F9A3285CF91E00D97359 /* FavoriteListViewController.swift in Sources */,
+				41A44472285E398D000F2C4A /* UIHelper.swift in Sources */,
 				41A44470285E20A0000F2C4A /* GFAvatarImageView.swift in Sources */,
 				4110F9A5285D104A00D97359 /* GFButton.swift in Sources */,
 				4110F9A9285D26E000D97359 /* FollowerListViewController.swift in Sources */,
