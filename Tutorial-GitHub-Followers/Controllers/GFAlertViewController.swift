@@ -53,7 +53,7 @@ class GFAlertViewController: UIViewController {
             containerView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             containerView.widthAnchor.constraint(equalToConstant: 280),
             containerView.heightAnchor.constraint(equalToConstant: 220)
-
+            
         ])
     }
     
@@ -65,7 +65,7 @@ class GFAlertViewController: UIViewController {
             titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
             titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             titleLabel.heightAnchor.constraint(equalToConstant: padding)
-            ])
+        ])
     }
     
     func configureActionButton() {
@@ -81,7 +81,7 @@ class GFAlertViewController: UIViewController {
         ])
     }
     
-  @objc  func dismissViewController() {
+    @objc  func dismissViewController() {
         dismiss(animated: true)
     }
     
@@ -95,7 +95,7 @@ class GFAlertViewController: UIViewController {
             messageLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: padding),
             messageLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -padding),
             messageLabel.bottomAnchor.constraint(equalTo: actionButton.topAnchor, constant: -12)
-        
+            
         ])
     }
     

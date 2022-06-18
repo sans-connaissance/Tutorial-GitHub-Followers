@@ -29,7 +29,7 @@ class SearchViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func createDismissKeyboardTapGesture() {
@@ -42,7 +42,7 @@ class SearchViewController: UIViewController {
             presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter a username.", buttonTitle: "Ok")
             return }
         
-        
+        //THIS IS WHERE THE SCREEN IS ANIMATED
         let followerListViewController = FollowerListViewController()
         followerListViewController.username = usernameTextField.text
         followerListViewController.title = usernameTextField.text
