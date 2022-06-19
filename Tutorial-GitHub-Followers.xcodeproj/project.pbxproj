@@ -23,6 +23,7 @@
 		4110F9B8285D4C9200D97359 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9B7285D4C9200D97359 /* Follower.swift */; };
 		4110F9BA285D4D2C00D97359 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4110F9B9285D4D2C00D97359 /* User.swift */; };
 		41491C5A285F95A400E12E97 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41491C59285F95A400E12E97 /* GFEmptyStateView.swift */; };
+		419DF870285FADC000E34720 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419DF86F285FADC000E34720 /* UserInfoViewController.swift */; };
 		41A44468285E0C59000F2C4A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A44467285E0C59000F2C4A /* NetworkManager.swift */; };
 		41A4446B285E154E000F2C4A /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4446A285E154E000F2C4A /* ErrorMessage.swift */; };
 		41A4446E285E2029000F2C4A /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A4446D285E2029000F2C4A /* FollowerCell.swift */; };
@@ -49,6 +50,7 @@
 		4110F9B7285D4C9200D97359 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		4110F9B9285D4D2C00D97359 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		41491C59285F95A400E12E97 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		419DF86F285FADC000E34720 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 		41A44467285E0C59000F2C4A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		41A4446A285E154E000F2C4A /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		41A4446D285E2029000F2C4A /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				4110F9A2285CF91E00D97359 /* FavoriteListViewController.swift */,
 				4110F9A8285D26E000D97359 /* FollowerListViewController.swift */,
 				4110F9AE285D31A800D97359 /* GFAlertViewController.swift */,
+				419DF86F285FADC000E34720 /* UserInfoViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,6 +290,7 @@
 				41491C5A285F95A400E12E97 /* GFEmptyStateView.swift in Sources */,
 				41A44468285E0C59000F2C4A /* NetworkManager.swift in Sources */,
 				4110F9A1285CF8EE00D97359 /* SearchViewController.swift in Sources */,
+				419DF870285FADC000E34720 /* UserInfoViewController.swift in Sources */,
 				4110F96D285CF0DF00D97359 /* AppDelegate.swift in Sources */,
 				4110F96F285CF0DF00D97359 /* SceneDelegate.swift in Sources */,
 			);

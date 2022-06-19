@@ -15,14 +15,17 @@ class FollowerListViewController: UIViewController {
     
     var username: String!
     var followers: [Follower] = []
+    var filteredFollowers: [Follower] = []
     var collectionView: UICollectionView!
     var dataSource: UICollectionViewDiffableDataSource<Section, Follower>!
     var page = 1
     var hasMoreFollowers = true
+    var isSearching = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configureViewController()
+        configureSearchController()
         configureCollectionView()
         getFollowers(username: username, page: page)
         configureDataSource()
@@ -44,8 +47,18 @@ class FollowerListViewController: UIViewController {
         //use object
         view.addSubview(collectionView)
         collectionView.delegate = self
-        collectionView.backgroundColor = .systemCyan
+        collectionView.backgroundColor = .systemBackground
         collectionView.register(FollowerCell.self, forCellWithReuseIdentifier: FollowerCell.reuseID)
+    }
+    
+    func configureSearchController() {
+        let searchController = UISearchController()
+        searchController.searchResultsUpdater = self
+        searchController.searchBar.delegate = self
+        searchController.searchBar.placeholder = "Search for a username"
+        searchController.obscuresBackgroundDuringPresentation = false
+        self.navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.searchController = searchController
         
     }
     
@@ -67,7 +80,7 @@ class FollowerListViewController: UIViewController {
                         return
                     }
                 }
-                self.updateData()
+                self.updateData(on: self.followers)
             case .failure(let error):
                 self.presentGFAlertOnMainThread(title: "Error", message: error.rawValue, buttonTitle: "Ok")
             }
@@ -82,7 +95,7 @@ class FollowerListViewController: UIViewController {
         })
     }
     
-    func updateData() {
+    func updateData(on followers: [Follower]) {
         var snapShot = NSDiffableDataSourceSnapshot<Section, Follower>()
         snapShot.appendSections([.main])
         snapShot.appendItems(followers)
@@ -104,8 +117,29 @@ extension FollowerListViewController: UICollectionViewDelegate {
             page += 1
             getFollowers(username: username, page: page)
         }
-        
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let activeArray = isSearching ? filteredFollowers : followers
+        let follower = activeArray[indexPath.item]
+        let destinationViewController = UserInfoViewController()
+        destinationViewController.username = follower.login
+        let navigationController = UINavigationController(rootViewController: destinationViewController)
+        present(navigationController, animated: true)
+    }
+}
+
+extension FollowerListViewController: UISearchResultsUpdating, UISearchBarDelegate {
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let filter = searchController.searchBar.text, !filter.isEmpty else {return}
+        isSearching = true
+        filteredFollowers = followers.filter {$0.login.lowercased().contains(filter.lowercased())}
+        updateData(on: filteredFollowers)
+    }
     
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        isSearching = false
+        updateData(on: followers)
+    }
 }
