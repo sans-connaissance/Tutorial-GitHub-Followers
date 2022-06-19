@@ -1,8 +1,8 @@
 //
-//  ErrorMessage.swift
+//  GFError.swift
 //  Tutorial-GitHub-Followers
 //
-//  Created by David Malicke on 6/18/22.
+//  Created by David Malicke on 6/19/22.
 //
 
 import Foundation
