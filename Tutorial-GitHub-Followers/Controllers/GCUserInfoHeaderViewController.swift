@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GCUserInfoHeader: UIViewController {
+class GCUserInfoHeaderViewController: UIViewController {
     
     let avatarImageView = GFAvatarImageView(frame: .zero)
     let usernameLabel = GFTitleLabel(textAlignment: .left, fontSize: 34)
@@ -32,8 +32,20 @@ class GCUserInfoHeader: UIViewController {
         super.viewDidLoad()
         addSubviews()
         layoutUI()
-
+        configureUIElements()
+    }
+    
+    func configureUIElements() {
+        avatarImageView.downloadImage(from: user.avatarUrl)
+        usernameLabel.text = user.login
+        nameLabel.text = user.name ?? ""
+        locationLabel.text = user.location ?? "Location not specified"
+        bioLabel.text = user.bio ?? "No Bio Available"
+        bioLabel.numberOfLines = 3
         
+        locationImageView.image = UIImage(systemName: SFSymbols.location)
+        locationImageView.tintColor = .secondaryLabel
+
     }
     
     func addSubviews() {
